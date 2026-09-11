@@ -124,7 +124,7 @@ export function SiteHeader() {
               </div>
             )}
           </div>
-          {primaryNav.slice(1).map((link) => (
+          {primaryNav.filter((link) => link.label !== "Products").map((link) => (
             <Link key={link.href} href={link.href} className="text-neutral-700 hover:text-brand-red">
               {link.label}
             </Link>
