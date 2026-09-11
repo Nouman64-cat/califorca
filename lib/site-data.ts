@@ -105,6 +105,23 @@ export const brands = [
   "Aqua ChemPac",
 ];
 
+export type BrandLogo = {
+  name: string;
+  src: string;
+};
+
+export const brandLogos: BrandLogo[] = [
+  { name: "HaoTian", src: "/brands/HaoTian.jpg" },
+  { name: "IPC Pulex", src: "/brands/IPC-Pulex.jpg" },
+  { name: "KSI", src: "/brands/KSIC-Logo-Big.jpg" },
+  { name: "Cavallo Grande", src: "/brands/logo-CAVALLO-GRANDE.jpg" },
+  { name: "TutuMop", src: "/brands/TutuMop-Logo.jpg" },
+  { name: "TMB Made in Italy", src: "/brands/tmb-made-in-italy-logo-copy.jpg" },
+  { name: "MR", src: "/brands/MR-Logo.jpg" },
+  { name: "Martinazzo", src: "/brands/Martinazzo-Logo.jpg" },
+  { name: "IPC Ready System", src: "/brands/logo-ipc-min.jpg" },
+];
+
 export type Benefit = {
   title: string;
   description: string;

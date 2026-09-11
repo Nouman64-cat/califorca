@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { PageHero } from "@/components/page-hero";
 import { WhyChooseUs } from "@/components/why-choose-us";
-import { BrandStrip } from "@/components/brand-strip";
+import { BrandCarousel } from "@/components/brand-carousel";
 import { companyInfo } from "@/lib/site-data";
 
 export const metadata: Metadata = {
@@ -69,11 +69,11 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="container-page py-16">
-        <h2 className="mb-10 text-center text-2xl font-extrabold text-brand-black">
+      <section className="py-16">
+        <h2 className="container-page mb-10 text-center text-2xl font-extrabold text-brand-black">
           Brands We Carry
         </h2>
-        <BrandStrip />
+        <BrandCarousel />
       </section>
     </>
   );

@@ -4,7 +4,7 @@ import { SectionHeading } from "@/components/section-heading";
 import { AboutTeaser } from "@/components/about-teaser";
 import { CategoryGrid } from "@/components/category-grid";
 import { WhyChooseUs } from "@/components/why-choose-us";
-import { BrandStrip } from "@/components/brand-strip";
+import { BrandCarousel } from "@/components/brand-carousel";
 import { companyInfo } from "@/lib/site-data";
 
 export default function Home() {
@@ -79,9 +79,11 @@ export default function Home() {
       </section>
 
       {/* Brands */}
-      <section className="container-page py-16">
-        <SectionHeading eyebrow="Trusted Partners" title="Brands We Carry" />
-        <BrandStrip />
+      <section className="py-16">
+        <div className="container-page">
+          <SectionHeading eyebrow="Trusted Partners" title="Brands We Carry" />
+        </div>
+        <BrandCarousel />
       </section>
 
       {/* Why choose us */}
