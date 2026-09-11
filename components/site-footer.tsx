@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { MailIcon, PhoneIcon, PinIcon } from "./icons";
 import { categories, companyInfo, footerInfoLinks, primaryNav, socialLinks } from "@/lib/site-data";
@@ -7,8 +8,14 @@ export function SiteFooter() {
     <footer className="mt-20 bg-brand-black text-neutral-300">
       <div className="container-page grid grid-cols-1 gap-10 py-14 sm:grid-cols-2 lg:grid-cols-4">
         <div>
-          <span className="text-xl font-extrabold text-white">
-            CALIFOR<span className="text-brand-red">CA</span>
+          <span className="inline-block rounded-md bg-white px-3 py-2">
+            <Image
+              src="/logo.png"
+              alt="Califorca Trading LLC"
+              width={2244}
+              height={888}
+              className="h-9 w-auto"
+            />
           </span>
           <p className="mt-4 text-sm leading-relaxed text-neutral-400">
             Since {companyInfo.founded}, Califorca Trading LLC has supplied commercial cleaning

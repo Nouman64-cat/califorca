@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import {
   CartIcon,
@@ -61,10 +62,15 @@ export function SiteHeader() {
           <MenuIcon className="h-6 w-6" />
         </button>
 
-        <Link href="/" className="flex shrink-0 items-center gap-2">
-          <span className="text-2xl font-extrabold tracking-tight text-brand-black">
-            CALIFOR<span className="text-brand-red">CA</span>
-          </span>
+        <Link href="/" className="flex shrink-0 items-center">
+          <Image
+            src="/logo.png"
+            alt="Califorca Trading LLC"
+            width={2244}
+            height={888}
+            priority
+            className="h-10 w-auto sm:h-12"
+          />
         </Link>
 
         <div className="relative hidden flex-1 items-center md:flex">
@@ -137,9 +143,7 @@ export function SiteHeader() {
         <div className="fixed inset-0 z-50 bg-black/40 md:hidden">
           <div className="h-full w-80 max-w-[85%] overflow-y-auto bg-white p-5">
             <div className="mb-6 flex items-center justify-between">
-              <span className="text-xl font-extrabold text-brand-black">
-                CALIFOR<span className="text-brand-red">CA</span>
-              </span>
+              <Image src="/logo.png" alt="Califorca Trading LLC" width={2244} height={888} className="h-9 w-auto" />
               <button onClick={() => setMobileOpen(false)} aria-label="Close menu">
                 <CloseIcon className="h-6 w-6" />
               </button>
