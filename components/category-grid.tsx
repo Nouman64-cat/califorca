@@ -4,20 +4,26 @@ import { categoryIconMap } from "./icons";
 
 export function CategoryGrid() {
   return (
-    <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
+    <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
       {categories.map((category) => {
         const Icon = categoryIconMap[category.icon];
         return (
-          <Link
+          <div
             key={category.slug}
-            href={`/products/${category.slug}`}
-            className="group flex flex-col items-center rounded-xl border border-neutral-200 bg-white p-6 text-center transition hover:-translate-y-1 hover:border-brand-red hover:shadow-lg"
+            className="flex flex-col items-center rounded-3xl bg-white p-8 text-center shadow-md transition hover:-translate-y-1 hover:shadow-xl"
           >
-            <span className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-brand-gray text-brand-black transition group-hover:bg-brand-red group-hover:text-white">
-              <Icon className="h-8 w-8" />
+            <span className="mb-5 flex h-24 w-24 items-center justify-center rounded-full bg-neutral-200">
+              <Icon className="h-11 w-11 text-brand-red" />
             </span>
-            <span className="text-sm font-semibold text-brand-black">{category.name}</span>
-          </Link>
+            <h3 className="text-lg font-bold text-brand-red">{category.name}</h3>
+            <p className="mt-2 text-sm text-neutral-600">{category.description}</p>
+            <Link
+              href={`/products/${category.slug}`}
+              className="mt-6 rounded-full bg-brand-red px-7 py-2.5 text-xs font-bold uppercase tracking-wider text-white transition hover:bg-brand-red-dark"
+            >
+              Shop Now
+            </Link>
+          </div>
         );
       })}
     </div>

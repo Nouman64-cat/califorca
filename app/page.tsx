@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { HeroCarousel } from "@/components/hero-carousel";
 import { SectionHeading } from "@/components/section-heading";
+import { AboutTeaser } from "@/components/about-teaser";
 import { CategoryGrid } from "@/components/category-grid";
 import { WhyChooseUs } from "@/components/why-choose-us";
 import { BrandStrip } from "@/components/brand-strip";
@@ -63,13 +64,15 @@ export default function Home() {
         </div>
       </section>
 
+      <AboutTeaser />
+
       {/* Browse by category */}
-      <section className="bg-brand-gray py-16">
+      <section className="bg-neutral-200 py-16">
         <div className="container-page">
           <SectionHeading
             eyebrow="Our Catalogue"
             title="Browse by Category"
-            description="Over 2,500 products across ten core categories, sourced from trusted manufacturers worldwide."
+            description="Over 2,500 products across nine core categories, sourced from trusted manufacturers worldwide."
           />
           <CategoryGrid />
         </div>

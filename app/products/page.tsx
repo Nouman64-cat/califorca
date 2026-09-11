@@ -12,10 +12,12 @@ export default function ProductsPage() {
     <>
       <PageHero
         title="Our Products"
-        description="Over 2,500 products across ten core categories, sourced from trusted manufacturers worldwide."
+        description="Over 2,500 products across nine core categories, sourced from trusted manufacturers worldwide."
       />
-      <section className="container-page py-16">
-        <CategoryGrid />
+      <section className="bg-neutral-200 py-16">
+        <div className="container-page">
+          <CategoryGrid />
+        </div>
       </section>
     </>
   );

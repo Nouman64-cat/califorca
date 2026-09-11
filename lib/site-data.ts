@@ -35,61 +35,64 @@ export const categories: Category[] = [
     name: "Cleaning Machinery",
     slug: "cleaning-machinery",
     icon: "machinery",
-    description: "Floor scrubbers, polishers, vacuums and carpet extractors.",
+    description:
+      "Our cleaning machinery is an advanced wheeled system that can clean several properties at once.",
   },
   {
-    name: "Garbage Bins",
+    name: "Garbage Bin",
     slug: "garbage-bins",
     icon: "bin",
-    description: "Indoor and outdoor waste bins in a range of sizes.",
+    description:
+      "Explore wide varieties of dustbins. Get High Quality Plastic Dustbins, Stainless Steel Dustbins, and more.",
   },
   {
     name: "Mop Trolleys",
     slug: "mop-trolleys",
     icon: "trolley",
-    description: "Single and double bucket janitorial trolleys.",
+    description:
+      "Clean your way with the Janitorial Trolley. We have a Wide Range of Mop Trolley and Janitorial Trolleys.",
   },
   {
     name: "Brooms",
     slug: "brooms",
     icon: "broom",
-    description: "Indoor and outdoor brooms for every surface.",
+    description:
+      "Wide Range of PP, Coco, and Outdoor Brooms. Sourced From Italy, Sri Lanka and China.",
   },
   {
     name: "Squeegees",
     slug: "squeegees",
     icon: "squeegee",
-    description: "Floor and window squeegees for streak-free finishes.",
+    description:
+      "Say goodbye to streaky windows and mirrors with these hardwood-handled squeegees! Explore quality squeegees.",
   },
   {
     name: "Mops",
     slug: "mops",
     icon: "mop",
-    description: "Microfiber, cotton and flat mops with refills.",
+    description:
+      "We have mops for every job. Variety of Cotton, Rayon, Viscose, Acrylic and Microfiber mops suited for all your needs.",
   },
   {
     name: "Cleaning Accessories",
     slug: "cleaning-accessories",
     icon: "brush",
-    description: "Brushes, scrubbers, cloths and hand tools.",
-  },
-  {
-    name: "Dispensers",
-    slug: "dispensers",
-    icon: "dispenser",
-    description: "Soap, tissue and sanitizer dispensers for washrooms.",
+    description:
+      "All types of Cleaning accessories such as Static Duster, Toilet Pump, Spray Bottle, and many more.",
   },
   {
     name: "Household Products",
     slug: "household-products",
     icon: "household",
-    description: "Everyday essentials for home and facility upkeep.",
+    description:
+      "Need Clothes Hangers, Personal Care Products, Storage Jars, Bath products, we got you covered.",
   },
   {
     name: "Kitchenware",
     slug: "kitchenware",
     icon: "kitchen",
-    description: "Commercial-grade knives, utensils and kitchen tools.",
+    description:
+      "From Kitchen Knives to Kitchen Towels, we have a wide range of everyday Kitchenware Products.",
   },
 ];
 
